@@ -64,8 +64,7 @@ extension Toggl: TargetType {
     }
 
     var headers: [String : String]? {
-//        let username = "<<Toggl API Token>>"
-        let username = "f9df14f70a6253d96499a61d6441dcbe"
+        let username = "<<Toggl API Token>>"
         let password = "api_token"
         let loginString = "\(username):\(password)"
         let loginData = loginString.data(using: .utf8)
