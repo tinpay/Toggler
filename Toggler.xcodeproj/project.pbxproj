@@ -1,0 +1,718 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E22A00625CAC51E00F861D1 /* TogglerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E22A00525CAC51E00F861D1 /* TogglerApp.swift */; };
+		2E22A00825CAC51E00F861D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E22A00725CAC51E00F861D1 /* ContentView.swift */; };
+		2E22A00A25CAC52000F861D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E22A00925CAC52000F861D1 /* Assets.xcassets */; };
+		2E22A00D25CAC52000F861D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E22A00C25CAC52000F861D1 /* Preview Assets.xcassets */; };
+		2E22A01825CAC52000F861D1 /* TogglerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E22A01725CAC52000F861D1 /* TogglerTests.swift */; };
+		2E22A02325CAC52000F861D1 /* TogglerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E22A02225CAC52000F861D1 /* TogglerUITests.swift */; };
+		2E22A03725CAC6DB00F861D1 /* TogglRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E22A03625CAC6DB00F861D1 /* TogglRepository.swift */; };
+		2E84DAFA25D54A78001B8755 /* PreferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E84DAF925D54A78001B8755 /* PreferenceView.swift */; };
+		2E998B192608C67700CED3AA /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E998B182608C67700CED3AA /* Store.swift */; };
+		2E998BC0260A107F00CED3AA /* AuthReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E998BBF260A107F00CED3AA /* AuthReducer.swift */; };
+		2E998BC8260A10D100CED3AA /* TogglReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E998BC7260A10D100CED3AA /* TogglReducer.swift */; };
+		2E998BCD260A110300CED3AA /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E998BCC260A110300CED3AA /* AppReducer.swift */; };
+		2EAE7851262AC67D00214F33 /* TogglMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE7850262AC67D00214F33 /* TogglMiddleware.swift */; };
+		2EAE7859262C417F00214F33 /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE7858262C417F00214F33 /* Converter.swift */; };
+		2EDC262F25E3F98F00A4021D /* Workspace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDC262E25E3F98F00A4021D /* Workspace.swift */; };
+		2EDC263425E3F9F800A4021D /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDC263325E3F9F800A4021D /* Project.swift */; };
+		2EF26B3E25CC14C0004F9594 /* TimeEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF26B3D25CC14C0004F9594 /* TimeEntry.swift */; };
+		2EF26B5225CC1EEB004F9594 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 2EF26B5125CC1EEB004F9594 /* Moya */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2E22A01425CAC52000F861D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E229FFA25CAC51E00F861D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E22A00125CAC51E00F861D1;
+			remoteInfo = Toggler;
+		};
+		2E22A01F25CAC52000F861D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E229FFA25CAC51E00F861D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E22A00125CAC51E00F861D1;
+			remoteInfo = Toggler;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2E22A00225CAC51E00F861D1 /* Toggler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Toggler.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E22A00525CAC51E00F861D1 /* TogglerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglerApp.swift; sourceTree = "<group>"; };
+		2E22A00725CAC51E00F861D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2E22A00925CAC52000F861D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2E22A00C25CAC52000F861D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2E22A00E25CAC52000F861D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E22A01325CAC52000F861D1 /* TogglerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TogglerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E22A01725CAC52000F861D1 /* TogglerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglerTests.swift; sourceTree = "<group>"; };
+		2E22A01925CAC52000F861D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E22A01E25CAC52000F861D1 /* TogglerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TogglerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E22A02225CAC52000F861D1 /* TogglerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglerUITests.swift; sourceTree = "<group>"; };
+		2E22A02425CAC52000F861D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E22A03625CAC6DB00F861D1 /* TogglRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglRepository.swift; sourceTree = "<group>"; };
+		2E84DAF925D54A78001B8755 /* PreferenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceView.swift; sourceTree = "<group>"; };
+		2E998B182608C67700CED3AA /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		2E998BBF260A107F00CED3AA /* AuthReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthReducer.swift; sourceTree = "<group>"; };
+		2E998BC7260A10D100CED3AA /* TogglReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglReducer.swift; sourceTree = "<group>"; };
+		2E998BCC260A110300CED3AA /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		2EAE7850262AC67D00214F33 /* TogglMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglMiddleware.swift; sourceTree = "<group>"; };
+		2EAE7858262C417F00214F33 /* Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
+		2EDC262E25E3F98F00A4021D /* Workspace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workspace.swift; sourceTree = "<group>"; };
+		2EDC263325E3F9F800A4021D /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		2EF0E83F25E01C7A00F3921C /* Toggler.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Toggler.entitlements; sourceTree = "<group>"; };
+		2EF26B3D25CC14C0004F9594 /* TimeEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeEntry.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E229FFF25CAC51E00F861D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EF26B5225CC1EEB004F9594 /* Moya in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E22A01025CAC52000F861D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E22A01B25CAC52000F861D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E229FF925CAC51E00F861D1 = {
+			isa = PBXGroup;
+			children = (
+				2E22A00425CAC51E00F861D1 /* Toggler */,
+				2E22A01625CAC52000F861D1 /* TogglerTests */,
+				2E22A02125CAC52000F861D1 /* TogglerUITests */,
+				2E22A00325CAC51E00F861D1 /* Products */,
+				2EF26B4225CC1639004F9594 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2E22A00325CAC51E00F861D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E22A00225CAC51E00F861D1 /* Toggler.app */,
+				2E22A01325CAC52000F861D1 /* TogglerTests.xctest */,
+				2E22A01E25CAC52000F861D1 /* TogglerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E22A00425CAC51E00F861D1 /* Toggler */ = {
+			isa = PBXGroup;
+			children = (
+				2EF0E83F25E01C7A00F3921C /* Toggler.entitlements */,
+				2E22A00525CAC51E00F861D1 /* TogglerApp.swift */,
+				2E84DAF925D54A78001B8755 /* PreferenceView.swift */,
+				2E2CC18226135F8200D29D6D /* ContentView */,
+				2E998BBE260A102500CED3AA /* Reducer */,
+				2EAE784F262AC66400214F33 /* Middleware */,
+				2E998B172608C63A00CED3AA /* Store */,
+				2E22A03625CAC6DB00F861D1 /* TogglRepository.swift */,
+				2E2CC1862613645500D29D6D /* Model */,
+				2E22A00925CAC52000F861D1 /* Assets.xcassets */,
+				2E22A00E25CAC52000F861D1 /* Info.plist */,
+				2E22A00B25CAC52000F861D1 /* Preview Content */,
+			);
+			path = Toggler;
+			sourceTree = "<group>";
+		};
+		2E22A00B25CAC52000F861D1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2E22A00C25CAC52000F861D1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2E22A01625CAC52000F861D1 /* TogglerTests */ = {
+			isa = PBXGroup;
+			children = (
+				2E22A01725CAC52000F861D1 /* TogglerTests.swift */,
+				2E22A01925CAC52000F861D1 /* Info.plist */,
+			);
+			path = TogglerTests;
+			sourceTree = "<group>";
+		};
+		2E22A02125CAC52000F861D1 /* TogglerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2E22A02225CAC52000F861D1 /* TogglerUITests.swift */,
+				2E22A02425CAC52000F861D1 /* Info.plist */,
+			);
+			path = TogglerUITests;
+			sourceTree = "<group>";
+		};
+		2E2CC18226135F8200D29D6D /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				2E22A00725CAC51E00F861D1 /* ContentView.swift */,
+			);
+			path = ContentView;
+			sourceTree = "<group>";
+		};
+		2E2CC1862613645500D29D6D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2EF26B3D25CC14C0004F9594 /* TimeEntry.swift */,
+				2EDC262E25E3F98F00A4021D /* Workspace.swift */,
+				2EDC263325E3F9F800A4021D /* Project.swift */,
+				2EAE7858262C417F00214F33 /* Converter.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2E998B172608C63A00CED3AA /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				2E998B182608C67700CED3AA /* Store.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		2E998BBE260A102500CED3AA /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				2E998BCC260A110300CED3AA /* AppReducer.swift */,
+				2E998BBF260A107F00CED3AA /* AuthReducer.swift */,
+				2E998BC7260A10D100CED3AA /* TogglReducer.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		2EAE784F262AC66400214F33 /* Middleware */ = {
+			isa = PBXGroup;
+			children = (
+				2EAE7850262AC67D00214F33 /* TogglMiddleware.swift */,
+			);
+			path = Middleware;
+			sourceTree = "<group>";
+		};
+		2EF26B4225CC1639004F9594 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E22A00125CAC51E00F861D1 /* Toggler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E22A02725CAC52000F861D1 /* Build configuration list for PBXNativeTarget "Toggler" */;
+			buildPhases = (
+				2E229FFE25CAC51E00F861D1 /* Sources */,
+				2E229FFF25CAC51E00F861D1 /* Frameworks */,
+				2E22A00025CAC51E00F861D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Toggler;
+			packageProductDependencies = (
+				2EF26B5125CC1EEB004F9594 /* Moya */,
+			);
+			productName = Toggler;
+			productReference = 2E22A00225CAC51E00F861D1 /* Toggler.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2E22A01225CAC52000F861D1 /* TogglerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E22A02A25CAC52000F861D1 /* Build configuration list for PBXNativeTarget "TogglerTests" */;
+			buildPhases = (
+				2E22A00F25CAC52000F861D1 /* Sources */,
+				2E22A01025CAC52000F861D1 /* Frameworks */,
+				2E22A01125CAC52000F861D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E22A01525CAC52000F861D1 /* PBXTargetDependency */,
+			);
+			name = TogglerTests;
+			productName = TogglerTests;
+			productReference = 2E22A01325CAC52000F861D1 /* TogglerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2E22A01D25CAC52000F861D1 /* TogglerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E22A02D25CAC52000F861D1 /* Build configuration list for PBXNativeTarget "TogglerUITests" */;
+			buildPhases = (
+				2E22A01A25CAC52000F861D1 /* Sources */,
+				2E22A01B25CAC52000F861D1 /* Frameworks */,
+				2E22A01C25CAC52000F861D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E22A02025CAC52000F861D1 /* PBXTargetDependency */,
+			);
+			name = TogglerUITests;
+			productName = TogglerUITests;
+			productReference = 2E22A01E25CAC52000F861D1 /* TogglerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E229FFA25CAC51E00F861D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					2E22A00125CAC51E00F861D1 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					2E22A01225CAC52000F861D1 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 2E22A00125CAC51E00F861D1;
+					};
+					2E22A01D25CAC52000F861D1 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 2E22A00125CAC51E00F861D1;
+					};
+				};
+			};
+			buildConfigurationList = 2E229FFD25CAC51E00F861D1 /* Build configuration list for PBXProject "Toggler" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2E229FF925CAC51E00F861D1;
+			packageReferences = (
+				2E22A03B25CAE40000F861D1 /* XCRemoteSwiftPackageReference "Moya" */,
+			);
+			productRefGroup = 2E22A00325CAC51E00F861D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E22A00125CAC51E00F861D1 /* Toggler */,
+				2E22A01225CAC52000F861D1 /* TogglerTests */,
+				2E22A01D25CAC52000F861D1 /* TogglerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E22A00025CAC51E00F861D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E22A00D25CAC52000F861D1 /* Preview Assets.xcassets in Resources */,
+				2E22A00A25CAC52000F861D1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E22A01125CAC52000F861D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E22A01C25CAC52000F861D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E229FFE25CAC51E00F861D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E22A00825CAC51E00F861D1 /* ContentView.swift in Sources */,
+				2EDC262F25E3F98F00A4021D /* Workspace.swift in Sources */,
+				2E22A00625CAC51E00F861D1 /* TogglerApp.swift in Sources */,
+				2E998B192608C67700CED3AA /* Store.swift in Sources */,
+				2EAE7859262C417F00214F33 /* Converter.swift in Sources */,
+				2E22A03725CAC6DB00F861D1 /* TogglRepository.swift in Sources */,
+				2EF26B3E25CC14C0004F9594 /* TimeEntry.swift in Sources */,
+				2E998BCD260A110300CED3AA /* AppReducer.swift in Sources */,
+				2E998BC0260A107F00CED3AA /* AuthReducer.swift in Sources */,
+				2E998BC8260A10D100CED3AA /* TogglReducer.swift in Sources */,
+				2EAE7851262AC67D00214F33 /* TogglMiddleware.swift in Sources */,
+				2E84DAFA25D54A78001B8755 /* PreferenceView.swift in Sources */,
+				2EDC263425E3F9F800A4021D /* Project.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E22A00F25CAC52000F861D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E22A01825CAC52000F861D1 /* TogglerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E22A01A25CAC52000F861D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E22A02325CAC52000F861D1 /* TogglerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2E22A01525CAC52000F861D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E22A00125CAC51E00F861D1 /* Toggler */;
+			targetProxy = 2E22A01425CAC52000F861D1 /* PBXContainerItemProxy */;
+		};
+		2E22A02025CAC52000F861D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E22A00125CAC51E00F861D1 /* Toggler */;
+			targetProxy = 2E22A01F25CAC52000F861D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2E22A02525CAC52000F861D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2E22A02625CAC52000F861D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2E22A02825CAC52000F861D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Toggler/Toggler.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Toggler/Preview Content\"";
+				DEVELOPMENT_TEAM = V42LP7TD28;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Toggler/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tinpay.Toggler;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = com.tinpay.Toggler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2E22A02925CAC52000F861D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Toggler/Toggler.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Toggler/Preview Content\"";
+				DEVELOPMENT_TEAM = V42LP7TD28;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Toggler/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tinpay.Toggler;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = com.tinpay.Toggler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2E22A02B25CAC52000F861D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 57F3P59Y8Q;
+				INFOPLIST_FILE = TogglerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tinpay.TogglerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Toggler.app/Toggler";
+			};
+			name = Debug;
+		};
+		2E22A02C25CAC52000F861D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 57F3P59Y8Q;
+				INFOPLIST_FILE = TogglerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tinpay.TogglerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Toggler.app/Toggler";
+			};
+			name = Release;
+		};
+		2E22A02E25CAC52000F861D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 57F3P59Y8Q;
+				INFOPLIST_FILE = TogglerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tinpay.TogglerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Toggler;
+			};
+			name = Debug;
+		};
+		2E22A02F25CAC52000F861D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 57F3P59Y8Q;
+				INFOPLIST_FILE = TogglerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tinpay.TogglerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Toggler;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E229FFD25CAC51E00F861D1 /* Build configuration list for PBXProject "Toggler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E22A02525CAC52000F861D1 /* Debug */,
+				2E22A02625CAC52000F861D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E22A02725CAC52000F861D1 /* Build configuration list for PBXNativeTarget "Toggler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E22A02825CAC52000F861D1 /* Debug */,
+				2E22A02925CAC52000F861D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E22A02A25CAC52000F861D1 /* Build configuration list for PBXNativeTarget "TogglerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E22A02B25CAC52000F861D1 /* Debug */,
+				2E22A02C25CAC52000F861D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E22A02D25CAC52000F861D1 /* Build configuration list for PBXNativeTarget "TogglerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E22A02E25CAC52000F861D1 /* Debug */,
+				2E22A02F25CAC52000F861D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2E22A03B25CAE40000F861D1 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2EF26B5125CC1EEB004F9594 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2E22A03B25CAE40000F861D1 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2E229FFA25CAC51E00F861D1 /* Project object */;
+}
