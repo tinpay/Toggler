@@ -128,7 +128,7 @@
 				2E998BBE260A102500CED3AA /* Reducer */,
 				2EAE784F262AC66400214F33 /* Middleware */,
 				2E998B172608C63A00CED3AA /* Store */,
-				2E22A03625CAC6DB00F861D1 /* TogglRepository.swift */,
+				2E9AF8A0262DBD7100BEC1F9 /* Repository */,
 				2E2CC1862613645500D29D6D /* Model */,
 				2E22A00925CAC52000F861D1 /* Assets.xcassets */,
 				2E22A00E25CAC52000F861D1 /* Info.plist */,
@@ -198,6 +198,14 @@
 				2E998BC7260A10D100CED3AA /* TogglReducer.swift */,
 			);
 			path = Reducer;
+			sourceTree = "<group>";
+		};
+		2E9AF8A0262DBD7100BEC1F9 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				2E22A03625CAC6DB00F861D1 /* TogglRepository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 		2EAE784F262AC66400214F33 /* Middleware */ = {
