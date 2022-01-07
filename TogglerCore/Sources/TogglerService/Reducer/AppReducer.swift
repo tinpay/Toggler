@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import TogglerCore
 
-func appReducer(_ state: AppState, _ action: Action) -> AppState {
+public func appReducer(_ state: AppState, _ action: Action) -> AppState {
     var state = state
     state.authState = authReducer(state.authState, action)
     state.togglState = togglReducer(state.togglState, action)
