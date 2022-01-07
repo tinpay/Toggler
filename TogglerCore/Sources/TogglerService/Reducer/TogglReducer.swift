@@ -7,14 +7,9 @@
 //
 
 import Foundation
-
-struct FetchTimeEntriesAction: Action {
-    let timeEntries: [TimeEntry]
-}
-
-struct FetchProjectsAction: Action {
-    let projects: [Project]
-}
+import TogglerCore
+import Project
+import TimeEntry
 
 func togglReducer(_ state: TogglState, _ action: Action) -> TogglState {
     var state = state

@@ -7,6 +7,8 @@
 //
 
 import SwiftUI
+import TogglerService
+import DomainService
 
 struct ContentView: View {
 
@@ -20,7 +22,7 @@ struct ContentView: View {
     }
 
     private func map(state: TogglState) -> Props {
-        let entriesString = state.timeEntries.isEmpty ? "<empty>" : Converter.makeEntriesString(date: Date(), projects: state.projects, timeEntries: state.timeEntries)
+        let entriesString = state.timeEntries.isEmpty ? "<empty>" : MessageDomainService.makeEntriesString(date: Date(), projects: state.projects, timeEntries: state.timeEntries)
         return Props(entriesString: entriesString, fetchEntries: {
             store.dispatch(action: FetchTimeEntriesAndProjectsActionAsync())
         })

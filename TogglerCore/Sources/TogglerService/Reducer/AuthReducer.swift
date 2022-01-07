@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import TogglerCore
 
 func authReducer(_ state: AuthState, _ action: Action) -> AuthState {
     // TODO: 認証の処理とかあればかく。tokenを永続化したり。

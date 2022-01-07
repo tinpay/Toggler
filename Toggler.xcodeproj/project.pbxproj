@@ -7,24 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E13DEAF2700ACC5009F9E24 /* TogglerService in Frameworks */ = {isa = PBXBuildFile; productRef = 2E13DEAE2700ACC5009F9E24 /* TogglerService */; };
 		2E22A00625CAC51E00F861D1 /* TogglerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E22A00525CAC51E00F861D1 /* TogglerApp.swift */; };
 		2E22A00825CAC51E00F861D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E22A00725CAC51E00F861D1 /* ContentView.swift */; };
 		2E22A00A25CAC52000F861D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E22A00925CAC52000F861D1 /* Assets.xcassets */; };
 		2E22A00D25CAC52000F861D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E22A00C25CAC52000F861D1 /* Preview Assets.xcassets */; };
 		2E22A01825CAC52000F861D1 /* TogglerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E22A01725CAC52000F861D1 /* TogglerTests.swift */; };
 		2E22A02325CAC52000F861D1 /* TogglerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E22A02225CAC52000F861D1 /* TogglerUITests.swift */; };
-		2E22A03725CAC6DB00F861D1 /* TogglRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E22A03625CAC6DB00F861D1 /* TogglRepository.swift */; };
 		2E84DAFA25D54A78001B8755 /* PreferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E84DAF925D54A78001B8755 /* PreferenceView.swift */; };
-		2E998B192608C67700CED3AA /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E998B182608C67700CED3AA /* Store.swift */; };
-		2E998BC0260A107F00CED3AA /* AuthReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E998BBF260A107F00CED3AA /* AuthReducer.swift */; };
-		2E998BC8260A10D100CED3AA /* TogglReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E998BC7260A10D100CED3AA /* TogglReducer.swift */; };
-		2E998BCD260A110300CED3AA /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E998BCC260A110300CED3AA /* AppReducer.swift */; };
-		2EAE7851262AC67D00214F33 /* TogglMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE7850262AC67D00214F33 /* TogglMiddleware.swift */; };
-		2EAE7859262C417F00214F33 /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE7858262C417F00214F33 /* Converter.swift */; };
-		2EDC262F25E3F98F00A4021D /* Workspace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDC262E25E3F98F00A4021D /* Workspace.swift */; };
-		2EDC263425E3F9F800A4021D /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDC263325E3F9F800A4021D /* Project.swift */; };
-		2EF26B3E25CC14C0004F9594 /* TimeEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF26B3D25CC14C0004F9594 /* TimeEntry.swift */; };
-		2EF26B5225CC1EEB004F9594 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 2EF26B5125CC1EEB004F9594 /* Moya */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,18 +47,8 @@
 		2E22A01E25CAC52000F861D1 /* TogglerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TogglerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E22A02225CAC52000F861D1 /* TogglerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglerUITests.swift; sourceTree = "<group>"; };
 		2E22A02425CAC52000F861D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2E22A03625CAC6DB00F861D1 /* TogglRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglRepository.swift; sourceTree = "<group>"; };
 		2E84DAF925D54A78001B8755 /* PreferenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceView.swift; sourceTree = "<group>"; };
-		2E998B182608C67700CED3AA /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
-		2E998BBF260A107F00CED3AA /* AuthReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthReducer.swift; sourceTree = "<group>"; };
-		2E998BC7260A10D100CED3AA /* TogglReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglReducer.swift; sourceTree = "<group>"; };
-		2E998BCC260A110300CED3AA /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
-		2EAE7850262AC67D00214F33 /* TogglMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglMiddleware.swift; sourceTree = "<group>"; };
-		2EAE7858262C417F00214F33 /* Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
-		2EDC262E25E3F98F00A4021D /* Workspace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workspace.swift; sourceTree = "<group>"; };
-		2EDC263325E3F9F800A4021D /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		2EF0E83F25E01C7A00F3921C /* Toggler.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Toggler.entitlements; sourceTree = "<group>"; };
-		2EF26B3D25CC14C0004F9594 /* TimeEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeEntry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EF26B5225CC1EEB004F9594 /* Moya in Frameworks */,
+				2E13DEAF2700ACC5009F9E24 /* TogglerService in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,11 +105,6 @@
 				2E22A00525CAC51E00F861D1 /* TogglerApp.swift */,
 				2E84DAF925D54A78001B8755 /* PreferenceView.swift */,
 				2E2CC18226135F8200D29D6D /* ContentView */,
-				2E998BBE260A102500CED3AA /* Reducer */,
-				2EAE784F262AC66400214F33 /* Middleware */,
-				2E998B172608C63A00CED3AA /* Store */,
-				2E9AF8A0262DBD7100BEC1F9 /* Repository */,
-				2E2CC1862613645500D29D6D /* Model */,
 				2E22A00925CAC52000F861D1 /* Assets.xcassets */,
 				2E22A00E25CAC52000F861D1 /* Info.plist */,
 				2E22A00B25CAC52000F861D1 /* Preview Content */,
@@ -171,51 +146,6 @@
 			path = ContentView;
 			sourceTree = "<group>";
 		};
-		2E2CC1862613645500D29D6D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				2EF26B3D25CC14C0004F9594 /* TimeEntry.swift */,
-				2EDC262E25E3F98F00A4021D /* Workspace.swift */,
-				2EDC263325E3F9F800A4021D /* Project.swift */,
-				2EAE7858262C417F00214F33 /* Converter.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		2E998B172608C63A00CED3AA /* Store */ = {
-			isa = PBXGroup;
-			children = (
-				2E998B182608C67700CED3AA /* Store.swift */,
-			);
-			path = Store;
-			sourceTree = "<group>";
-		};
-		2E998BBE260A102500CED3AA /* Reducer */ = {
-			isa = PBXGroup;
-			children = (
-				2E998BCC260A110300CED3AA /* AppReducer.swift */,
-				2E998BBF260A107F00CED3AA /* AuthReducer.swift */,
-				2E998BC7260A10D100CED3AA /* TogglReducer.swift */,
-			);
-			path = Reducer;
-			sourceTree = "<group>";
-		};
-		2E9AF8A0262DBD7100BEC1F9 /* Repository */ = {
-			isa = PBXGroup;
-			children = (
-				2E22A03625CAC6DB00F861D1 /* TogglRepository.swift */,
-			);
-			path = Repository;
-			sourceTree = "<group>";
-		};
-		2EAE784F262AC66400214F33 /* Middleware */ = {
-			isa = PBXGroup;
-			children = (
-				2EAE7850262AC67D00214F33 /* TogglMiddleware.swift */,
-			);
-			path = Middleware;
-			sourceTree = "<group>";
-		};
 		2EF26B4225CC1639004F9594 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -240,7 +170,7 @@
 			);
 			name = Toggler;
 			packageProductDependencies = (
-				2EF26B5125CC1EEB004F9594 /* Moya */,
+				2E13DEAE2700ACC5009F9E24 /* TogglerService */,
 			);
 			productName = Toggler;
 			productReference = 2E22A00225CAC51E00F861D1 /* Toggler.app */;
@@ -314,7 +244,6 @@
 			);
 			mainGroup = 2E229FF925CAC51E00F861D1;
 			packageReferences = (
-				2E22A03B25CAE40000F861D1 /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = 2E22A00325CAC51E00F861D1 /* Products */;
 			projectDirPath = "";
@@ -359,18 +288,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E22A00825CAC51E00F861D1 /* ContentView.swift in Sources */,
-				2EDC262F25E3F98F00A4021D /* Workspace.swift in Sources */,
 				2E22A00625CAC51E00F861D1 /* TogglerApp.swift in Sources */,
-				2E998B192608C67700CED3AA /* Store.swift in Sources */,
-				2EAE7859262C417F00214F33 /* Converter.swift in Sources */,
-				2E22A03725CAC6DB00F861D1 /* TogglRepository.swift in Sources */,
-				2EF26B3E25CC14C0004F9594 /* TimeEntry.swift in Sources */,
-				2E998BCD260A110300CED3AA /* AppReducer.swift in Sources */,
-				2E998BC0260A107F00CED3AA /* AuthReducer.swift in Sources */,
-				2E998BC8260A10D100CED3AA /* TogglReducer.swift in Sources */,
-				2EAE7851262AC67D00214F33 /* TogglMiddleware.swift in Sources */,
 				2E84DAFA25D54A78001B8755 /* PreferenceView.swift in Sources */,
-				2EDC263425E3F9F800A4021D /* Project.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -703,22 +622,10 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		2E22A03B25CAE40000F861D1 /* XCRemoteSwiftPackageReference "Moya" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Moya/Moya.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 14.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
-		2EF26B5125CC1EEB004F9594 /* Moya */ = {
+		2E13DEAE2700ACC5009F9E24 /* TogglerService */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2E22A03B25CAE40000F861D1 /* XCRemoteSwiftPackageReference "Moya" */;
-			productName = Moya;
+			productName = TogglerService;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

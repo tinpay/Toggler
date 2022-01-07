@@ -7,14 +7,14 @@
 //
 import Foundation
 
-struct TimeEntry: Decodable {
-    let id: Int
-    let wid: Int
-    let pid: Int?
-    let start:Date?
-    let stop:String?
-    let duration: Int
-    let description: String
+public struct TimeEntry: Decodable {
+    public let id: Int
+    public let wid: Int
+    public let pid: Int?
+    public let start:Date?
+    public let stop:String?
+    public let duration: Int
+    public let description: String
     enum CodingKeys: String, CodingKey {
         case id
         case wid
@@ -32,7 +32,7 @@ struct TimeEntry: Decodable {
         return "\(String(format: "%02d", hour)):\(String(format: "%02d", minute))"
       }
 
-    init(from decoder: Decoder) throws {
+    public init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         id = try values.decode(Int.self, forKey: .id)
         wid = try values.decode(Int.self, forKey: .wid)

@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import TogglerService
 
 @main
 struct TogglerApp: App {
