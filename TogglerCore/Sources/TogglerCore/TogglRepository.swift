@@ -19,7 +19,7 @@ extension Toggl: TargetType {
         return FileHandle(forReadingAtPath: path)!.readDataToEndOfFile()
     }
 
-    public var baseURL: URL  { return URL(string: "https://api.track.toggl.com/api/v8")! }
+    public var baseURL: URL  { return URL(string: "https://api.track.toggl.com/api/v9")! }
 
     public var path: String {
         switch self {

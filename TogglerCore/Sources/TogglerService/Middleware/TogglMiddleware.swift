@@ -22,12 +22,13 @@ public func togglMiddleware() -> Middleware<AppState> {
             // fetch All Projects
             ProjectRepository.shared.fetchProjects { projectResult in
                 // fetch All TimeEntries
-                TimeEntryRepository.shared.fetchEntries { entryResult in
+                Task {
                     do {
+                        let entryResult = try await TimeEntryRepository.shared.fetchEntries()
                         dispatch(FetchProjectsAction(projects: try projectResult.get()))
-                        dispatch(FetchTimeEntriesAction(timeEntries: try entryResult.get()))
-                    }catch {
-
+                        dispatch(FetchTimeEntriesAction(timeEntries: entryResult))
+                    } catch {
+                        print("error")
                     }
                 }
             }

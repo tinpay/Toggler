@@ -14,7 +14,7 @@ let package = Package(
             targets: ["TogglerService"]),
     ],
     dependencies: [
-        .package(name: "Moya", url: "https://github.com/Moya/Moya.git", from: "14.0.0"),
+        .package(name: "Moya", url: "https://github.com/Moya/Moya.git", from: "15.0.3"),
     ],
     targets: [
         .target(

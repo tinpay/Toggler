@@ -14,11 +14,13 @@ struct PreferenceView: View {
     // TODO: 適当においただけ。処理もかいてない。
     var body: some View {
         NavigationView {
-            HStack{
-                Text("Toggl Token")
-                    .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
-                TextField("input toggl token", text: $togglToken)
-                    .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
+            List {
+                HStack{
+                    Text("Toggl Token")
+                        .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
+                    TextField("input toggl token", text: $togglToken)
+                        .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
+                }
             }
             .navigationTitle("設定")
             .navigationBarItems(trailing: Button(action: {
