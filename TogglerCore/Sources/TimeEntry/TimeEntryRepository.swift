@@ -25,7 +25,6 @@ public class TimeEntryRepository {
                 case let .success(response):
                     let data = response.data
                     do {
-//                        let aaa = String(data: data, encoding: .utf8)
                         let result = try JSONDecoder().decode([TimeEntry].self, from: data)
                         continuation.resume(returning: result)
                     }catch {

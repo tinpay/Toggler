@@ -29,6 +29,7 @@ public class ProjectRepository {
                 }
             }catch {
                 print(error)
+                completion(.failure(error))
             }
         }
     }
@@ -40,7 +41,6 @@ public class ProjectRepository {
             case let .success(response):
                 let data = response.data
                 do {
-
                     let result = try JSONDecoder().decode([Project].self, from: data)
                     completion(.success(result))
                 }catch {

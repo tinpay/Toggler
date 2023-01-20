@@ -20,18 +20,18 @@ public func togglMiddleware() -> Middleware<AppState> {
         case _ as FetchTimeEntriesAndProjectsActionAsync:
 
             // fetch All Projects
-            ProjectRepository.shared.fetchProjects { projectResult in
+//            ProjectRepository.shared.fetchProjects { projectResult in
                 // fetch All TimeEntries
                 Task {
                     do {
                         let entryResult = try await TimeEntryRepository.shared.fetchEntries()
-                        dispatch(FetchProjectsAction(projects: try projectResult.get()))
+//                        dispatch(FetchProjectsAction(projects: try projectResult.get()))
                         dispatch(FetchTimeEntriesAction(timeEntries: entryResult))
                     } catch {
                         print("error")
                     }
                 }
-            }
+//            }
         default:
             break
         }
