@@ -24,9 +24,9 @@ extension Toggl: TargetType {
     public var path: String {
         switch self {
         case .timeEntries:
-            return "/time_entries"
+            return "/me/time_entries"
         case .workspaces:
-            return "/workspaces"
+            return "/organizations/600364/workspaces"
         case .workspaceProjects(let wid):
             return "/workspaces/\(wid)/projects"
         }

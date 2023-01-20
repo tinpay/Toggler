@@ -19,7 +19,6 @@ public class WorkspaceRepository {
             case let .success(response):
                 let data = response.data
                 do {
-
                     let result = try JSONDecoder().decode([Workspace].self, from: data)
                     completion(.success(result))
                 }catch {
