@@ -14,6 +14,8 @@
 		2E22A00D25CAC52000F861D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E22A00C25CAC52000F861D1 /* Preview Assets.xcassets */; };
 		2E22A01825CAC52000F861D1 /* TogglerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E22A01725CAC52000F861D1 /* TogglerTests.swift */; };
 		2E22A02325CAC52000F861D1 /* TogglerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E22A02225CAC52000F861D1 /* TogglerUITests.swift */; };
+		2E4A3E63297C1E4F0015F25A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4A3E62297C1E4F0015F25A /* LoginView.swift */; };
+		2E4A3E65297C28060015F25A /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E4A3E64297C28060015F25A /* Color.xcassets */; };
 		2E84DAFA25D54A78001B8755 /* PreferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E84DAF925D54A78001B8755 /* PreferenceView.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +49,8 @@
 		2E22A01E25CAC52000F861D1 /* TogglerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TogglerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E22A02225CAC52000F861D1 /* TogglerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglerUITests.swift; sourceTree = "<group>"; };
 		2E22A02425CAC52000F861D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E4A3E62297C1E4F0015F25A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		2E4A3E64297C28060015F25A /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		2E84DAF925D54A78001B8755 /* PreferenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceView.swift; sourceTree = "<group>"; };
 		2EF0E83F25E01C7A00F3921C /* Toggler.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Toggler.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,8 +108,10 @@
 				2EF0E83F25E01C7A00F3921C /* Toggler.entitlements */,
 				2E22A00525CAC51E00F861D1 /* TogglerApp.swift */,
 				2E84DAF925D54A78001B8755 /* PreferenceView.swift */,
+				2E4A3E62297C1E4F0015F25A /* LoginView.swift */,
 				2E2CC18226135F8200D29D6D /* ContentView */,
 				2E22A00925CAC52000F861D1 /* Assets.xcassets */,
+				2E4A3E64297C28060015F25A /* Color.xcassets */,
 				2E22A00E25CAC52000F861D1 /* Info.plist */,
 				2E22A00B25CAC52000F861D1 /* Preview Content */,
 			);
@@ -263,6 +269,7 @@
 			files = (
 				2E22A00D25CAC52000F861D1 /* Preview Assets.xcassets in Resources */,
 				2E22A00A25CAC52000F861D1 /* Assets.xcassets in Resources */,
+				2E4A3E65297C28060015F25A /* Color.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +296,7 @@
 			files = (
 				2E22A00825CAC51E00F861D1 /* ContentView.swift in Sources */,
 				2E22A00625CAC51E00F861D1 /* TogglerApp.swift in Sources */,
+				2E4A3E63297C1E4F0015F25A /* LoginView.swift in Sources */,
 				2E84DAFA25D54A78001B8755 /* PreferenceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,7 +384,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -431,7 +439,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -454,7 +462,7 @@
 				DEVELOPMENT_TEAM = V42LP7TD28;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Toggler/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -482,7 +490,7 @@
 				DEVELOPMENT_TEAM = V42LP7TD28;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Toggler/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
