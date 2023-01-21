@@ -21,6 +21,13 @@ struct PreferenceView: View {
                     TextField("input toggl token", text: $togglToken)
                         .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
                 }
+                NavigationLink {
+                    LoginView()
+                } label: {
+                    Text("ログイン")
+                }
+
+
             }
             .navigationTitle("設定")
             .navigationBarItems(trailing: Button(action: {

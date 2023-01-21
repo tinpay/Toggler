@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "toggl-track_logotype_stacked_pink.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

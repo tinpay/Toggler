@@ -63,7 +63,6 @@ extension Toggl: TargetType {
     }
 
     public var headers: [String : String]? {
-        let username = "<<トークンをいれる>>"
         let password = "api_token"
         let loginString = "\(username):\(password)"
         let loginData = loginString.data(using: .utf8)
