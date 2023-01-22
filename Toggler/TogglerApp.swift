@@ -15,7 +15,7 @@ struct TogglerApp: App {
         let store = Store(reducer: appReducer, state: AppState(), middlewares:[togglMiddleware()] )
 
         WindowGroup {
-            ContentView().environmentObject(store)
+            HomeView().environmentObject(store)
         }
     }
 }
