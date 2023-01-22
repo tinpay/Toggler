@@ -10,20 +10,19 @@ import SwiftUI
 import TogglerService
 import DomainService
 
-struct ContentView: View {
+struct HomeView: View {
 
     @EnvironmentObject var store: Store<AppState>
-    @State var showsActivityView: Bool = false
     @State var showsPreferenceView: Bool = false
+    @State var entriesString: String = ""
+    @State var selection: Int = 0
 
     struct Props {
-        @State var entriesString: String = ""
         let fetchEntries: () -> ()
     }
 
     private func map(state: TogglState) -> Props {
-        let entriesString = state.timeEntries.isEmpty ? "" : MessageDomainService.makeEntriesString(date: Date(), projects: state.projects, timeEntries: state.timeEntries)
-        return Props(entriesString: entriesString, fetchEntries: {
+        return Props(fetchEntries: {
             store.dispatch(action: FetchTimeEntriesAndProjectsActionAsync())
         })
     }
@@ -35,21 +34,15 @@ struct ContentView: View {
         let props = map(state: store.state.togglState)
 
         NavigationView{
-            VStack{
-                NavigationLink(
-                    destination:  PreferenceView(),
-                    label: {
-                        /*@START_MENU_TOKEN@*/Text("Navigate")/*@END_MENU_TOKEN@*/
-                    })
-                TextEditor(text: props.$entriesString)
-                Button("Share") {
-                    showsActivityView = true
-                }
-                .sheet(isPresented: $showsActivityView) {
-                        ActivityView(
-                            activityItems: [props.entriesString],
-                            applicationActivities: nil
-                        )
+            VStack {
+                Picker("aaa", selection: $selection) {
+                    Text("入力する").tag(0)
+                    Text("報告する").tag(1)
+                }.pickerStyle(.segmented)
+                if selection == 0 {
+                    InputView()
+                } else {
+                    ReportView(text: $entriesString)
                 }
             }
             .navigationBarTitle("Toggl", displayMode: .inline)
@@ -66,6 +59,9 @@ struct ContentView: View {
             }){
                 Image(systemName: "arrow.clockwise")
             })
+        }
+        .onAppear {
+//            let entriesString = state.timeEntries.isEmpty ? "" : MessageDomainService.makeEntriesString(date: Date(), projects: state.projects, timeEntries: state.timeEntries)
         }
     }
 }
@@ -94,6 +90,6 @@ struct ActivityView: UIViewControllerRepresentable {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        HomeView()
     }
 }
