@@ -17,14 +17,21 @@ struct PreferenceView: View {
             List {
                 HStack{
                     Text("Toggl Token")
-                        .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
+                        .padding(.horizontal, 10)
                     TextField("input toggl token", text: $togglToken)
-                        .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
+                        .padding(.horizontal, 10)
                 }
                 NavigationLink {
                     LoginView()
                 } label: {
-                    Text("ログイン")
+                    HStack {
+                        Text("Toggl連携")
+                            .font(.body)
+                        Spacer()
+                        Text("未連携")
+                            .font(.caption)
+                            .foregroundColor(.gray)
+                    }.frame(maxWidth: .infinity)
                 }
 
 
