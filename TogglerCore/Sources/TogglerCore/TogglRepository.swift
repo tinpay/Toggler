@@ -9,6 +9,7 @@ import Foundation
 import Moya
 
 public enum Toggl {
+    case me
     case timeEntries(Date)
     case workspaces
     case workspaceProjects(Int)
@@ -23,6 +24,8 @@ extension Toggl: TargetType {
 
     public var path: String {
         switch self {
+        case .me:
+            return "/me"
         case .timeEntries:
             return "/me/time_entries"
         case .workspaces:
@@ -33,6 +36,8 @@ extension Toggl: TargetType {
     }
     public var method: Moya.Method {
         switch self {
+        case .me:
+            return.get
         case .timeEntries:
             return .get
         case .workspaces:
@@ -45,6 +50,8 @@ extension Toggl: TargetType {
 
     public var task: Task {
         switch self {
+        case .me:
+            return .requestPlain
         case .timeEntries(let today):
             let dateFormatter = ISO8601DateFormatter()
             let startToday = Calendar(identifier: .gregorian).startOfDay(for: today)
@@ -63,7 +70,8 @@ extension Toggl: TargetType {
     }
 
     public var headers: [String : String]? {
-        let password = "api_token"
+        let username = "<email>"
+        let password = "<password>"
         let loginString = "\(username):\(password)"
         let loginData = loginString.data(using: .utf8)
         let base64LoginString = loginData?.base64EncodedString()

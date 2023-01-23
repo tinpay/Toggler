@@ -22,10 +22,12 @@ let package = Package(
             dependencies: ["Project",
                            "TimeEntry",
                            "Workspace",
+                           "Me",
                            "DomainService"]),
         .target(name: "Project", dependencies: ["TogglerCore", "Workspace"]),
         .target(name: "TimeEntry", dependencies: ["TogglerCore", "Project", "Workspace"]),
         .target(name: "Workspace", dependencies: ["TogglerCore"]),
+        .target(name: "Me", dependencies: ["TogglerCore"]),
         .target(name: "DomainService", dependencies: ["TogglerCore", "TimeEntry"]),
         .target(name: "TogglerCore", dependencies: ["Moya"])
 

@@ -29,8 +29,6 @@ struct HomeView: View {
 
     var body: some View {
 
-        // TODO: 起動時に表示されるようにする
-
         let props = map(state: store.state.togglState)
 
         NavigationView{
