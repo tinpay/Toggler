@@ -11,8 +11,10 @@ struct InputView: View {
     var body: some View {
         VStack {
             Text("TEST")
+                .frame(maxWidth: .infinity)
             Spacer()
         }
+        .background(.blue)
     }
 }
 
