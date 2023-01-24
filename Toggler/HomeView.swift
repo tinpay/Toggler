@@ -16,6 +16,8 @@ struct HomeView: View {
     @State var showsPreferenceView: Bool = false
     @State var entriesString: String = ""
     @State var selection: Int = 0
+    @GestureState private var dragOffset: CGFloat = 0
+    @State private var currentIndex = 0
 
     struct Props {
         let fetchEntries: () -> ()
@@ -32,16 +34,23 @@ struct HomeView: View {
         let props = map(state: store.state.togglState)
 
         NavigationView{
-            VStack {
-                Picker("aaa", selection: $selection) {
-                    Text("入力する").tag(0)
-                    Text("報告する").tag(1)
-                }.pickerStyle(.segmented)
-                if selection == 0 {
-                    InputView()
-                } else {
-                    ReportView(text: $entriesString)
-                }
+                VStack {
+                    Picker("aaa", selection: $selection) {
+                        Text("入力する").tag(0)
+                        Text("報告する").tag(1)
+                    }.pickerStyle(.segmented)
+                    GeometryReader { geometory in
+                        HStack(spacing: 0) {
+                            ReportView(text: $entriesString)
+                                .frame(width: geometory.size.width)
+                            InputView()
+                                .frame(width: geometory.size.width)
+                        }
+                        .offset(x: dragOffset)
+                        .offset(x: -CGFloat(selection) * geometory.size.width )
+                        .animation(.linear(duration: 0.2), value: CGFloat(selection) * geometory.size.width)
+                    }
+                    
             }
             .navigationBarTitle("Toggl", displayMode: .inline)
             .navigationBarItems(leading: Button(action: {
@@ -87,7 +96,9 @@ struct ActivityView: UIViewControllerRepresentable {
 }
 
 struct ContentView_Previews: PreviewProvider {
+
     static var previews: some View {
-        HomeView()
+        let store = Store(reducer: appReducer, state: AppState(), middlewares:[togglMiddleware()] )
+        HomeView().environmentObject(store)
     }
 }

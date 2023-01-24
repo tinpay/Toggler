@@ -15,16 +15,18 @@ struct ReportView: View {
     var body: some View {
         VStack{
             TextEditor(text: $text)
-            Button("Share") {
-                showsActivityView = true
-            }
-            .sheet(isPresented: $showsActivityView) {
-                ActivityView(
-                    activityItems: [text],
-                    applicationActivities: nil
-                )
-            }
-        }
+                .cornerRadius(20)
+                .padding(20)
+//            Button("Share") {
+//                showsActivityView = true
+//            }
+//            .sheet(isPresented: $showsActivityView) {
+//                ActivityView(
+//                    activityItems: [text],
+//                    applicationActivities: nil
+//                )
+//            }
+        }.background(Color("secondary"))
     }
 }
 
