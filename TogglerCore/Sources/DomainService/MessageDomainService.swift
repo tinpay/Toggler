@@ -26,7 +26,7 @@ public class MessageDomainService {
 
     }
 
-    public static func makeEntriesString(date: Date, timeEntries: [TimeEntry]) -> String{
+    public static func makeEntriesString(date: Date, timeEntries: [TimeEntry]) -> String?{
     //        return "(*) "  + dateString(date: date) + "\n" + timeEntries.map { "- \($0.desc)(\($0.durationHourMinuteSecond))\n"}.joined()
         return "(*) "  + dateString(date: date) + "\n" + timeEntries.map { "- \($0.description)"}.joined()
 
